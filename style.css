@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --STRONG-CYAN: hsl(171, 66%, 44%);
+    --LIGHT-BLUE: hsl(233, 100%, 69%);
+    --DARK-GRAYISH:  hsl(210, 10%, 33%);
+    --GRAYISH-BLUE: hsl(201, 11%, 66%);
+    --FONT-SIZE: 18px;
+}
+body{
+    font-family: Bai Jamjuree;
+    font-size: var(--FONT-SIZE);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.top-container{
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.logo {
+    padding-top: 8rem;
+    align-self: center;
+    justify-self: center;
+}
+.content{
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    opacity: 82%;
+    align-self: center;
+    text-align: center;
+}
+.content .text{
+    padding: 1.5rem;
+    opacity: 70%;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    align-self: center;
+    width: 100%;
+    padding: 1.5rem;
+    
+}
+.buttons .ios, .mac {
+    padding: 1rem 0;
+    background-color: var(--STRONG-CYAN);
+    height: 2rem;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 30px; 
+}
+.buttons .ios:hover, .mac:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+.mac{
+    background-color: var(--LIGHT-BLUE);
+}
+.content .computer-image {
+    padding: 3rem 1.5rem;
+}
+.desktop-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+   
+}
+.computer-image{
+    width: 100%;
+    padding: 1.5rem;
+    align-self: center;
+}
+.image-devices {
+    padding: 5rem 0 ;
+}
+.track h2 {
+    padding-top: 1rem;
+}
+.blacklists{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.blacklists .icon {
+    align-self: center;
+    padding: 2rem;
+}
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+.sponsor img {
+    align-self: flex-start;
+}
+.sponsor .blacklists{
+    gap: 4rem;
+}
+.OS{
+    width: 100%;
+    padding-bottom: 9.5rem;
+}
+.OS .buttons {
+    padding: 0 1.5rem;
+    width: auto;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgb(209, 204, 204);
+}
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+.footer svg{
+    padding: 2rem 0; 
+}
+.socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+@media screen and (min-width: 768px){
+    .content {
+        text-align: center;
+    }
+    .buttons {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+    .content{
+        width: auto;
+    }
+    .desktop-content{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .content-beside{
+        text-align: left;
+        padding: 1.5rem 0;
+    }
+    .content-beside h2 {
+        text-align: left; 
+        padding-left: 1.5rem; 
+        padding-top: 5rem;
+    }
+    .desktop-content .text {
+        padding-top: 1.3rem;
+        text-align: left;  
+    }
+    .computer-image{
+        position: relative;
+        right: 5rem
+    }
+    .supercharge-children{
+        display: flex;
+        align-items: center;
+    }
+    .sponsor .blacklists{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .OS {
+        display: flex;
+        flex-direction: column;
+    }
+    .OS .buttons{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem;
+        width: 70%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-around;
+    }
+    .footer .logo {
+        justify-content: center;
+        padding: 2rem;
+    }
+    .socials {
+        display: flex;
+    }
+    .socials img{
+        align-items: center;
+        padding-top: 4rem;
+    }
+    .footer p:hover{
+        cursor: pointer;
+        color: var(--STRONG-CYAN);
+        
+    }
+    .socials svg:hover {
+        fill: var(--STRONG-CYAN);
+        cursor: pointer;
+    }
+    }
